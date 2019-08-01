@@ -31,7 +31,9 @@
     </a-layout-sider>
     <a-layout>
       <transition mode="out-in">
-        <router-view></router-view>
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
       </transition>
     </a-layout>
   </a-layout>
